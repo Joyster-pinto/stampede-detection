@@ -1,0 +1,68 @@
+# ============================================================
+# .gitignore — Stampede Detection Research Project
+# ============================================================
+
+# ── Python ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual Environments ────────────────────────────────────
+venv/
+env/
+.env/
+
+# ── IDE / Editor ────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Datasets (too large for GitHub) ─────────────────────────
+datasets/
+
+# ── Trained Model Weights ───────────────────────────────────
+outputs/models/*.pt
+outputs/features/*.pkl
+
+# ── Generated Outputs (reproducible via code) ───────────────
+outputs/figures/
+outputs/results/
+
+# ── LaTeX Auxiliary / Build Files ───────────────────────────
+LaTeX_Paper/drafts/
+LaTeX_Paper/drafts_plaintext/
+LaTeX_Paper/*.aux
+LaTeX_Paper/*.log
+LaTeX_Paper/*.out
+LaTeX_Paper/*.bbl
+LaTeX_Paper/*.blg
+LaTeX_Paper/*.synctex.gz
+LaTeX_Paper/*.fls
+LaTeX_Paper/*.fdb_latexmk
+LaTeX_Paper/verify_zip.ps1
+
+# ── Overleaf ZIP Archive ───────────────────────────────────
+LaTeX_Paper_Overleaf.zip
+
+# ── Word Report ─────────────────────────────────────────────
+Final_Submission_Report.docx
+
+# ── Reference Materials (not source code) ───────────────────
+materials/
+pdf_pages/
+
+# ── Gemini / Antigravity Agent Data ─────────────────────────
+brain/
+.gemini/
+
+# ── OS Files ────────────────────────────────────────────────
+Thumbs.db
+.DS_Store
+desktop.ini

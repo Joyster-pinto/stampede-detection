@@ -1,0 +1,58 @@
+\documentclass[a4paper,fleqn]{cas-dc}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{stfloats}
+\usepackage{capt-of}
+
+%% Fix text overflow in narrow columns
+\tolerance=1000
+\emergencystretch=3em
+\hyphenpenalty=50
+\sloppy
+
+\begin{document}
+
+\let\WriteBookmarks\relax
+\let\printorcid\relax
+
+\shorttitle{Hybrid Optical Flow and Temporal Attention Network for Stampede Detection}
+\shortauthors{Joyster Pinto and Dr. Vidhya Lakshmi M}
+
+\title{\LARGE Hybrid Optical Flow and Temporal Attention Network for Robust Early Stampede Detection in Public Crowd Surveillance}
+
+\author[1]{Joyster Pinto}
+
+\author[1]{Dr. Vidhya Lakshmi M}
+
+\affiliation[1]{organization={School of Computer Science and Engineering, Vellore Institute of Technology},
+  city={Chennai},
+  state={Tamil Nadu},
+  country={India}}
+
+\begin{abstract}
+Stampede events which occur in places of large crowds present a serious danger to people; however, automated recognition of such phenomena is a challenging task due to complex patterns of crowd behavior and the similarity of panic flow to regular pedestrian movement. Existing optical-flow based approaches utilize a limited set of three handcrafted descriptors, Entropy, Temporal Occupancy Variation (TOV), and Kernel Density Estimation (KDE), and apply unidirectional Long Short-Term Memory (LSTM) networks which do not explicitly model temporal relations and provide no interpretability. In this paper, we propose a vision-based system that achieves state-of-the-art performance on the UMN Crowd Activity Detection dataset, attains more than 99\% of accuracy and F1-score, allows for detecting anomalies earlier by 0.39~seconds on average, and processes video at 54.5~fps. The contributions of our study include (i)~design of a comprehensive set of 9~optical-flow statistics, (ii)~development of a BiLSTM+Attention temporal classifier with an embedded interpretability module, and (iii)~evaluation on multiple benchmark crowd surveillance video sets including zero-shot testing.
+\end{abstract}
+
+\begin{keywords}
+Stampede Detection \sep Crowd Anomaly Detection \sep Optical Flow \sep BiLSTM \sep Attention Mechanism \sep Explainable AI \sep Real-Time Surveillance
+\end{keywords}
+
+\maketitle
+
+\input{sec1_introduction}
+\input{sec2_related_work}
+\input{sec3_methodology}
+\input{sec4_experiments}
+\input{sec5_results}
+\input{sec6_discussion}
+\input{sec7_conclusion}
+
+\bibliographystyle{elsarticle-num}
+\bibliography{references}
+
+\end{document}

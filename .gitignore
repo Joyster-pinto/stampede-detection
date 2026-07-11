@@ -35,18 +35,8 @@ outputs/features/*.pkl
 outputs/figures/
 outputs/results/
 
-# ── LaTeX Auxiliary / Build Files ───────────────────────────
-LaTeX_Paper/drafts/
-LaTeX_Paper/drafts_plaintext/
-LaTeX_Paper/*.aux
-LaTeX_Paper/*.log
-LaTeX_Paper/*.out
-LaTeX_Paper/*.bbl
-LaTeX_Paper/*.blg
-LaTeX_Paper/*.synctex.gz
-LaTeX_Paper/*.fls
-LaTeX_Paper/*.fdb_latexmk
-LaTeX_Paper/verify_zip.ps1
+# ── LaTeX Paper (kept locally, not in repo) ─────────────────
+LaTeX_Paper/
 
 # ── Overleaf ZIP Archive ───────────────────────────────────
 LaTeX_Paper_Overleaf.zip

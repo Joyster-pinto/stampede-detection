@@ -2,8 +2,6 @@
 
 A real-time, explainable crowd anomaly detection system that identifies early-stage panic and stampede events in surveillance video using dense optical flow features and a BiLSTM+Attention classifier.
 
-![Pipeline](LaTeX_Paper/figures/pipeline_flowchart.png)
-
 ---
 
 ## Overview
@@ -56,26 +54,14 @@ Stampede events in crowded public spaces pose severe risks to human safety. This
 ├── experiment_cost_analysis.py      # Experiment 6: Computational cost profiling
 ├── experiment_explainability.py     # Experiment 7: Feature importance & attention
 │
-├── Experiment Output/               # Experiment results, figures, and reports
-│   ├── Experiment_1_Model_Comparison/
-│   ├── Experiment_2_Feature_Ablation/
-│   ├── Experiment_3_CrossDataset/
-│   ├── Experiment_4_Early_Detection/
-│   ├── Experiment_5_Robustness/
-│   ├── Experiment_6_Cost_Analysis/
-│   └── Experiment_7_Explainability/
-│
-└── LaTeX_Paper/                     # Research paper (LaTeX source)
-    ├── main.tex                     # Paper entry point
-    ├── sec1_introduction.tex
-    ├── sec2_related_work.tex
-    ├── sec3_methodology.tex
-    ├── sec4_experiments.tex
-    ├── sec5_results.tex
-    ├── sec6_discussion.tex
-    ├── sec7_conclusion.tex
-    ├── references.bib
-    └── figures/                     # All paper figures
+└── Experiment Output/               # Experiment results, figures, and reports
+    ├── Experiment_1_Model_Comparison/
+    ├── Experiment_2_Feature_Ablation/
+    ├── Experiment_3_CrossDataset/
+    ├── Experiment_4_Early_Detection/
+    ├── Experiment_5_Robustness/
+    ├── Experiment_6_Cost_Analysis/
+    └── Experiment_7_Explainability/
 ```
 
 ## Features Extracted
@@ -94,8 +80,6 @@ Stampede events in crowded public spaces pose severe risks to human safety. This
 
 ## Model Architecture
 
-![Architecture](LaTeX_Paper/figures/model_architecture.png)
-
 The proposed classifier consists of:
 1. **2-layer Bidirectional LSTM** (128 hidden units per direction) for temporal encoding
 2. **Additive (Bahdanau) Attention** for saliency-guided sequence aggregation
@@ -113,7 +97,7 @@ Total parameters: **554,817**
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/stampede-detection.git
+git clone https://github.com/Joyster-pinto/stampede-detection.git
 cd stampede-detection
 
 # Install dependencies
@@ -179,17 +163,6 @@ python main.py --step all --baseline-only
 | Python | 3.12 |
 | PyTorch | 2.0 |
 | OpenCV | 4.8 |
-
-## Citation
-
-If you use this code in your research, please cite:
-
-```bibtex
-@article{stampede2026,
-  title={Hybrid Optical Flow and Temporal Attention Network for Robust Early Stampede Detection in Public Crowd Surveillance},
-  year={2026}
-}
-```
 
 ## License
 
